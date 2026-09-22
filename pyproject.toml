@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "browser-permission-audit"
+version = "1.0.0"
+description = "Offline auditor for Chromium extension permissions and manifests."
+requires-python = ">=3.10"
+authors = [{name = "Radwan Abdulhadi Ahmed"}]
+license = {text = "MIT"}
+keywords = ["browser", "extension", "privacy", "permissions", "manifest"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
+
+[project.scripts]
+browser-permission-audit = "browser_permission_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
