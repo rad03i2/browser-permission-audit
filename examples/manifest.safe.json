@@ -1,0 +1,7 @@
+{
+  "manifest_version": 3,
+  "name": "Example Notes Extension",
+  "version": "1.0.0",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["https://example.com/*"]
+}
